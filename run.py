@@ -4,7 +4,7 @@
 # @E-mail:1554152079@qq.com
 # @Company:测试
 
-from .common.method import read_case,write_result, api_fun
+from common.method import read_case,write_result, api_fun
 
 # 完整的接口自动化测试
 def execute_fun(filename,sheetname):  # 封装成函数
@@ -40,7 +40,7 @@ def execute_fun(filename,sheetname):  # 封装成函数
         write_result(filename,sheetname,case_id+1,8,final_re)
 
 # 调用execute_fun()函数，对login接口自动化测试
-execute_fun('C:\Users\Administrator\.jenkins\workspace\scb22\\test_data\\testcase_api_wuye.xlsx', 'register', )
+execute_fun('C:\Users\Administrator\.jenkins\workspace\scb22\\test_data\\testcase_api_wuye.xlsx', 'login' )
 
 
 
